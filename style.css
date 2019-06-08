@@ -1,0 +1,315 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Thin'), local('BebasNeue-Thin'), url('bebasneuethin.woff2') format('woff2'), url('bebasneuethin.woff') format('woff'), url('bebasneuethin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Light'), local('BebasNeue-Light'), url('bebasneuelight.woff2') format('woff2'), url('bebasneuelight.woff') format('woff'), url('bebasneuelight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Book'), local('BebasNeueBook'), url('bebasneuebook.woff2') format('woff2'), url('bebasneuebook.woff') format('woff'), url('bebasneuebook.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bebasmiddle';
+    src: local('Bebas Neue Regular'), local('BebasNeueRegular'), url('fonts/bebasneue/bebasneueregular.woff2') format('woff2'), url('fonts/bebasneue/bebasneueregular.woff') format('woff'), url('fonts/bebasneue/bebasneueregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bebasbold';
+    src: local('Bebas Neue Bold'), local('BebasNeueBold'), url('fonts/bebasneue/bebasneuebold.woff2') format('woff2'), url('fonts/bebasneue/bebasneuebold.woff') format('woff'), url('fonts/bebasneue/bebasneuebold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body,ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+#header-top, #header-nav ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#header-top{
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+#search{
+    max-width: 440px;
+    width: 100%;
+    position: relative;
+}
+
+#search input{
+    width: 100%;
+    height: 30px;
+}
+
+#search img{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+#cart span{
+    position: relative;
+    bottom: 8px;
+    color: #a1a1a1;
+    font-size: 30px;
+    padding-left: 10px;
+    font-family: 'bebasbold';
+}
+
+#header-nav ul li a {
+    padding: 0 20px;
+    border-right: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'bebasmiddle';
+    font-size: 22px;
+    font-weight: bold;
+    height: 18px;
+    display: block;
+}
+
+#header-nav{
+    background: #4ccfc1;
+    padding: 10px 0;
+    box-shadow: 0 -1px 2px -5px rgb(0, 0, 0);
+}
+
+#header-nav ul li:first-child a{
+    padding-left: 0;
+}
+
+#header-nav ul li:last-child a{
+    border: none;
+    padding-right: 0;
+}
+
+.slider-bg{
+    background: #37c3b8;
+
+}
+
+#slider{
+    display: flex;
+    padding: 70px 0 55px 0;
+    justify-content: space-around;
+    flex-wrap: wrap
+}
+
+.slide-text{
+    max-width: 380px;
+}
+
+.slide-text h2{
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-family: 'bebasbold';
+    font-size: 65px;
+    margin: 0;
+}
+
+.slide-text p{
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 22px;
+    margin: 5px 0 30px 0;
+}
+
+.slide-text button {
+    border: 2px solid rgb(255, 255, 255);
+    background: none;
+    padding: 10px 20px 7px 20px;
+    color: rgb(253, 253, 253);
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: 'bebasbold';
+    border-radius: 8px;
+}
+
+.featured-bg{
+    background:#39c2b7;
+    margin: 25px 0 45px 0;
+    padding: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'bebasbold';
+}
+
+.featured-bg h2{
+font-size: 30px;
+padding: 8px 0 0 35px;
+letter-spacing: 2px;
+}
+
+#featured-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#featured-container .f-block{
+    width: 33.33%;
+}
+
+#featured-container .f-border{
+    box-shadow: 0 -1px 1px 1px #00000047;
+    margin: 25px;
+    text-align: center;
+    padding: 30px 0;
+    text-transform: uppercase;
+    color: #afafaf;
+    font-family: 'bebasbold';
+    font-size: 27px;
+    border-bottom: 5px solid #3cc395
+}
+
+#featured-container i {
+    font-style: normal;
+    margin-right: 15px;
+}
+
+#featured-container h3{
+    font-size: 27px;
+    margin: 15px 0;
+    letter-spacing: 2px;
+}
+
+#featured-container button{
+    padding: 12px 10px 8px 10px;
+    background: #3cc395;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'bebasbold';
+    font-size: 22px;
+}
+
+.footer-top-bg{
+    background: #39c2b7;
+    padding: 0 15px;
+}
+
+#footer-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+#footer-top h2 {
+    margin: 0 0 15px 0;
+    color: white;
+    font-family: 'bebasbold';
+    font-size: 30px;
+}
+
+#footer-top a {
+    color: white;
+    margin-bottom: 15px;
+    display: block;
+}
+
+#footer-top ul li:last-child a {
+    margin: 0;
+}
+
+#footer-bottom {
+    background: #2da89b;
+    text-align: center;
+    padding: 15 px 0;
+}
+
+#footer-bottom a {
+    color: white;
+}
+
+@media(max-width:600px){
+ #slider{
+     padding: 15px;
+     text-align: center
+ }
+
+ #slider h2{
+     margin: 15px;
+ }
+}
+
+    #search{
+        margin: 15px;
+    }
+
+
+
+@media(max-width:720px){
+    #header-top, #header-nav ul{
+        justify-content: center; 
+}
+
+    #search{
+        margin: 15px;
+    }
+    #featured-container .f-block{
+        width: 50%;
+    }
+    #featured-container .f-block{
+        margin: 8px;
+    }
+    .featured-bg{
+        margin: 15px 0;
+    }
+}
+
+
+
+@media(max-width:1000px){
+    #header-top{
+        margin: 0 15px;
+    }
+    #header-nav{
+        padding: 0 15px;
+    }
+
+    #header-nav ul li{
+        margin: 5px 0;
+    }
+
+    #header-nav ul a{
+        border: none;
+        padding: 0 10px;
+    }
+}
